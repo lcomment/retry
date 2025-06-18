@@ -1,0 +1,9 @@
+resilience4j.retry:
+  instances:
+    test-retry:
+      maxAttempts: 3
+      waitDuration: 1000
+      retryExceptions:
+        - java.lang.RuntimeException
+      ignoreExceptions:
+        - java.lang.IllegalArgumentException
