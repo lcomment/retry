@@ -14,6 +14,8 @@ plugins {
 module(name = ":spring-retry", "spring-retry")
 module(name = ":resilience4j-retry", "resilience4j-retry")
 module(name = ":sqs-retry", "sqs-retry")
+module(name = ":sqs-producer", "sqs-retry/producer")
+module(name = ":sqs-consumer", "sqs-retry/consumer")
 
 dependencyResolutionManagement {
     versionCatalogs {
